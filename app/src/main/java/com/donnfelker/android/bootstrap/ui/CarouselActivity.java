@@ -25,6 +25,32 @@ import butterknife.Views;
  */
 public class CarouselActivity extends BootstrapFragmentActivity {
 
+    /**
+     * https://github.com/JakeWharton/butterknife
+     *
+     * View "injection" library for Android which uses annotation processing to generate boilerplate code for you.
+     * 
+     * Eliminate findViewById calls by using @InjectView on fields.
+     * Group multiple views in a list using @InjectViews. Operate on all of them at once with actions, setters, or properties.
+     * Eliminate anonymous inner-classes for listeners by annotating methods with @OnClick and others.
+     * class ExampleActivity extends Activity {
+     *   @InjectView(R.id.user) EditText username;
+     *   @InjectView(R.id.pass) EditText password;
+     * 
+     *   @OnClick(R.id.submit) void submit() {
+     *     // TODO call server...
+     *   }
+     * 
+     *   @Override public void onCreate(Bundle savedInstanceState) {
+     *     super.onCreate(savedInstanceState);
+     *     setContentView(R.layout.simple_activity);
+     *     ButterKnife.inject(this);
+     *     // TODO Use "injected" views...
+     *   }
+     * }
+     *
+     * 
+     */
     @InjectView(id.tpi_header) TitlePageIndicator indicator;
     @InjectView(id.vp_pages) ViewPager pager;
 

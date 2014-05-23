@@ -47,6 +47,7 @@ public class BootstrapApplication extends Application {
 
         instance = this;
         // Perform Injection
+        // http://square.github.io/dagger/
         objectGraph = ObjectGraph.create(getRootModule());
         objectGraph.inject(this);
         objectGraph.injectStatics();
