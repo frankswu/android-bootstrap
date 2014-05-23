@@ -17,7 +17,7 @@
 
     <properties>
         <abs.version>4.2.0</abs.version>
-        <dagger.version>1.0-SNAPSHOT</dagger.version>
+        <dagger.version>1.0.1</dagger.version>
     </properties>
     <dependencies>
         <dependency>

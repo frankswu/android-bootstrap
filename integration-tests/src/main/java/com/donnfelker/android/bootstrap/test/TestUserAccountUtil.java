@@ -11,7 +11,8 @@ import static com.donnfelker.android.bootstrap.core.Constants.Auth.*;
 
 import com.donnfelker.android.bootstrap.tests.R;
 
-import roboguice.util.Ln;
+//import roboguice.util.Ln;
+import com.donnfelker.android.bootstrap.util.Ln;
 
 /**
  * Utilities for verifying an account

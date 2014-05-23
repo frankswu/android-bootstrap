@@ -25,12 +25,18 @@ import dagger.Provides;
 /**
  * Dagger module for setting up provides statements.
  * Register all of your entry points below.
+ *
+ * [ERROR] COMPILATION ERROR:
+ * [ERROR]: Graph validation failed: You have these unused @Provider methods:
+ *       1. coffee.DripCoffeeModule.provideChiller()
+ *       Set library=true in your module to disable this check.
+ * If your module's bindings will be used outside of the listed injects then mark the module as a library.
  */
 @Module
 (
         complete = false,
-
-        entryPoints = {
+        library = true,
+        injects = {
                 BootstrapApplication.class,
                 BootstrapAuthenticatorActivity.class,
                 CarouselActivity.class,
