@@ -76,6 +76,7 @@ public class AndroidModule {
         return context.getApplicationInfo();
     }
 
+
     @Provides
     AccountManager provideAccountManager(final Context context) {
         return AccountManager.get(context);
